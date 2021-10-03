@@ -20,9 +20,31 @@ body{
     padding: 10px;
     text-align: center;
 }
+.header{
+    grid-area: header;
+    background-color: seashell;
+}
+.navbar {
+    grid-area: navbar;
+    background-color:skyblue;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: seashell;
+}
+.main {
+    grid-area: main;
+    background-color: darkcyan;
+}
 
 .grid-container{
     display: grid;
     gap: 10px;
-
+    grid-template-areas: 
+    "header"
+    "navbar"
+    "main"
+    "sidebar"
+    "footer";
 }

@@ -5,9 +5,13 @@
     padding: 0;
 }
 
+html{
+    height: 100%;
+}
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.2rem;
+    min-height: 100%;
 }
 
 .grid-container > *  {
@@ -15,4 +19,10 @@ body{
     border-radius: 4px;
     padding: 10px;
     text-align: center;
+}
+
+.grid-container{
+    display: grid;
+    gap: 10px;
+
 }

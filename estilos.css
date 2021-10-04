@@ -66,3 +66,16 @@ body{
 }
     
 }
+
+
+@media (min-width:  900px){
+    .grid-container{
+        grid-template: 
+        "header header header" 100px
+        "navbar main sidebar" auto
+        "footer footer footer" 100px / 
+        200px auto 200px;
+    }
+        
+    }
+    

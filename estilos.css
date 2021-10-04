@@ -37,6 +37,11 @@ body{
     grid-area: main;
     background-color: darkcyan;
 }
+.footer{
+
+    grid-area: footer;
+    background-color: darkgreen;
+}
 
 .grid-container{
     display: grid;
@@ -47,4 +52,17 @@ body{
     "main"
     "sidebar"
     "footer";
+}
+
+@media (min-width:  600px){
+.grid-container{
+    grid-template-columns: 200px auto;
+    grid-template-rows: 100px 50px auto 100px;
+    grid-template-areas: 
+    "header header"
+    "navbar navbar"
+    "sidebar main"
+    "footer footer";
+}
+    
 }
